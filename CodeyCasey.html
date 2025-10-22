@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Casey</title>
+<style>
+body {
+background-color: #ffff;
+margin: 50px;
+font-family: Avenir, Arial, sans-serif;
+text-align: left;
+max-width: 1000px;
+}
+h1 { color: #0503144b; }
+h3 { color: #555; }
+p {
+line-height: 1.6;
+color: #333;
+max-width: 800px;
+}
+.highlight { color: #f361ce; font-weight: bold; }
+/* simple section cards */
+.card {
+background: #c7e3fd;
+border: 1px solid #4f4d4c;
+border-radius: 12px;
+padding: 16px 20px;
+margin: 16px 0;
+box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}
+
+/* image gallery for travelling */
+    .gallery {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 8px 0 8px;
+    }
+        /* side-by-side image + text for philosophy */
+    .philosophy {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .philosophy img {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    .philosophy p { margin: 0; }
+
+    /* small screens: stack philosophy */
+    @media (max-width: 600px) {
+      .philosophy { flex-direction: column; align-items: flex-start; }
+    }
+</style>
+</head>
+<body>
+
+<div class="About me">
+  <h3>About me</h3>
+  <p>
+    Hello! I'm <span class="highlight">Casey</span>. After working in various industries for almost 30 years,
+    I finally decided to follow my passion for creativity and design. At the age of 50, I took a bold step
+    and enrolled in a part-time <strong>Digital Communication Diploma</strong> course to pursue my dreams and
+    explore my creative mind. This page marks the beginning of that journey.
+  </p>
+</div>
+
+
+<div class="card">
+<h1>My hobbies</h1>
+</div>
+<div class="card">
+<h3>Travelling</h3>
+<img src="images/view-of japan.jpeg" width="300" />
+<img src="images/view-of-taipei city.jpeg" width="300"/>
+<img src="images/view-of-bangkok.jpeg" width="300" />
+<p>
+I love exploring new cities and cultures—planning routes, discovering hidden spots, and collecting stories along the way. Travel keeps me curious and fuels my creative perspective.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Food Hunt</h3>
+<img src="images/satay-chicken.jpeg" height="300" />
+<img src="images/nyonya-kueh.jpeg" height="300" />
+<img src="images/katong-laksa .jpeg" height="300" />
+<p>
+From hawker centres to all kinds of cafes, I enjoy hunting down great eats. Tasting and documenting flavours is my way of celebrating local culture and shared experiences.
+</p>
+</div>
+
+
+<div class="card philosophy">
+  <img src="images/wallpaper-calm.jpeg" alt="Calm scenery representing life philosophy" width="250">
+  <div>
+    <h3>My Life Philosophy</h3>
+    <p>
+      I believe that it’s never too late to start something new. Life is about continuous learning, growth, and staying curious. 
+      Every challenge is an opportunity to rediscover yourself — and to create something meaningful from it.
+    </p>
+  </div>
+
+</div>
+    </body>
+</html>
